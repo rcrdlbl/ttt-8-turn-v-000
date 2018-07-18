@@ -25,6 +25,12 @@ def move(board, index, token = "X")
   board[index] = token
 end
 
+def input_to_index(input)
+  return input.to_i - 1
+end
+
 def turn(board)
   "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
 end
